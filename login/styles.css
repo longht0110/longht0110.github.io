@@ -1,0 +1,149 @@
+@import url();
+
+#loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1000; /* Ensure the loading screen is displayed on top of other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s forwards;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+video#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+    position: fixed;
+    width: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter:  blur(10px);
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Set a style for all buttons */
+  button {
+  border: none;
+  border-radius: 7px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width:  auto;
+    padding: 14px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.logo {
+    width: 200;
+    height: 200;
+    border-radius: 20%;
+    object-fit: cover;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+  .headcontainer {
+    padding: 10px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  .line {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border: 0px;
+    border:  solid;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  @keyframes fadeOut {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
