@@ -128,6 +128,12 @@ form {
     color: rgba(255, 255, 255, 0.7);
   }
 
+  .login-btn {
+    width: 200px; /* increase the width to your desired size */
+    height: 50px; /* increase the height to your desired size */
+    font-size: 18px; /* adjust the font size if needed */
+  }
+
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
